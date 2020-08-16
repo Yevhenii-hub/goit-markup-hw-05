@@ -34,6 +34,7 @@ h1 {
 }
 
 p {
+  margin: 0;
   /* font-style: normal;
   font-weight: normal;
   font-size: 14px; */
@@ -509,46 +510,60 @@ background: #2196F3;
 
   list-style-type: none;
 }
-.border-first{
-  position: relative;
- 
-border: 1px solid #EEEEEE;
+
+.images .item {
+/* position: relative; */
+ border: 1px solid #EEEEEE;
 box-sizing: border-box;
-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
-.item-links:hover{
+
+
+
+.item:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
   
 
+.technical {
+  position: relative;
+box-sizing: border-box;
+  width: 100%;
+  height: 294px;
+  overflow: hidden;
 }
-.img{
- 
 
+.img{
+  display: block;
 }
+
 .tehnical:hover{
 transform: translateY(100%);
 }
   
-}
-.images.texnocriak{
-  font-family: Roboto;
-font-style: normal;
+.texnocriak {
+  position: absolute;
+display: block;
+
+top: 0;
+margin: 0;
+height: 294px;
+padding: 63px 24px;
 font-weight: normal;
-font-size: 8px;
-line-height: 28px;
-
+font-size: 18px;
+line-height: 1.55;
+color: #ffffff;
 letter-spacing: 0.03em;
-
-color: #FFFFFF;
-
+background: rgba(33,150,243,0.9);
+    transform: translateY(100%);
 }
-/* .item1{
+
+.item-links:hover .texnocriak {
   transform: translateY(0);
 }
-.item1:hover{
-  transform: translateY(100%);
 
-} */
-.texnocriak{
+  
+
+/* .texnocriak{
   position: absolute;
   box-sizing: border-box;
   
@@ -566,7 +581,7 @@ opacity: 1;
   transform: translateY(-100%);
   
   
-}
+} */
 .border{
   background: #FFFFFF;
 border: 1px solid #EEEEEE;
@@ -574,6 +589,7 @@ box-sizing: border-box;
 }
 
 .images .item {
+  position: relative;
   width: calc((100% - 60px) / 3);
     margin-right: 30px;
   margin-bottom: 30px;
@@ -814,7 +830,7 @@ border: none;
   padding-top: 200px;
   padding-bottom: 280px; 
   
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/fon.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url("/images/fon.jpg");
   background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -977,11 +993,4 @@ padding-bottom: 30px;
   background: #2F303A;
  
 
-}
-
-.backdrop{
-  position: fixed;
-  top:0;
-  left:0;
-  
 }
