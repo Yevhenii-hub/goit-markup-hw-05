@@ -541,6 +541,13 @@ letter-spacing: 0.03em;
 color: #FFFFFF;
 
 }
+/* .item1{
+  transform: translateY(0);
+}
+.item1:hover{
+  transform: translateY(100%);
+
+} */
 .texnocriak{
   position: absolute;
   box-sizing: border-box;
@@ -970,4 +977,11 @@ padding-bottom: 30px;
   background: #2F303A;
  
 
+}
+
+.backdrop{
+  position: fixed;
+  top:0;
+  left:0;
+  
 }
