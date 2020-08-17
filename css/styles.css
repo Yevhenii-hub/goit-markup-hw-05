@@ -277,7 +277,7 @@ height: 65px;
 	justify-content: center;
   color: #afb1b8;
   fill:currentColor;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),  */
   
   
   
@@ -287,30 +287,30 @@ height: 65px;
     }
     .social-links:hover{
       border-radius: 50%;
-	background-color: #2196f3;
-	color: #ffffff;
-      
+      background-color: #2196f3;
+      color: #ffffff;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
     }
     .icon-box{
       fill: #AFB1B8;
       display: block;
       color: #AFB1B8;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      
       
     }
     
       .firm1{
         display: block;
-        height: 49px;
-        width: 44px;
+        height: 48px;
+        width: 43px;
         padding: 20px 62px;
         
         
       }   
       .firm2{
         display: block;
-        height: 62px;
-        width: 50px;
+        height: 61px;
+        width: 48px;
         padding: 13px 59px;
       }     
       .firm3{
@@ -321,8 +321,8 @@ height: 65px;
       }     
       .firm4{
         display: block;
-        height: 80px;
-        width: 72px;
+        height: 79px;
+        width: 71px;
         padding: 5px 48px;
       }     
       .firm5{
@@ -349,6 +349,7 @@ height: 65px;
     margin-right: 30px;
     height: 90px;
      width: 170px;
+    
      
      
      }
@@ -361,11 +362,13 @@ height: 65px;
      
     .box:hover{
   color: #2196f3;
-	border: 1px solid #2196f3;
+  border: 1px solid #2196f3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .icon-box:hover{
       fill: #2196f3;
       padding:30px ;
+          transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
      
       
             
@@ -629,6 +632,7 @@ box-sizing: border-box;
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-menu {
@@ -982,9 +986,9 @@ padding-bottom: 30px;
   margin-top: 0;
   
   
+  }
+
   
-  
-}
 
 
 .svg{
