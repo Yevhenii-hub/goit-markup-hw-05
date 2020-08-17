@@ -837,6 +837,7 @@ border: none;
   
   padding-top: 200px;
   padding-bottom: 280px; 
+    
   
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url("../images/fon.jpg");
   background-repeat: no-repeat;
@@ -1002,4 +1003,52 @@ padding-bottom: 30px;
   background: #2F303A;
  
 
+}
+
+.backdrop{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+.backdrop.is-hidden{
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+}
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  
+
+width: 528px;
+height: 581px;
+
+
+background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+
+}
+.btn-close{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+box-sizing: border-box;
+
+.message{
+  font-size: 24px;
+  font-weight: 700;
 }
